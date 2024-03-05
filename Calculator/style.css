@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,489;1,489&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 489;
+    font-style: normal;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(78deg,black, rgb(86, 66, 66));
+    
+}
+
+.calculator{
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent; 
+    box-shadow: 12px 12px 0px rgba(182, 89, 89, 0.5); 
+}
+
+input {
+    width: 320px;
+    border: none;
+    margin: 10px;
+    padding: 20px;
+    background: transparent;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: wheat;
+}
+
+
+input::placeholder{
+    color: white;
+}
+button {
+    background: transparent;
+    color: white;
+    border: none;
+    width: 65px;
+    height: 60px;
+    margin: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 0px rgba(83, 83, 83, 0.5);
+    transform: scaleX(1);
+    transition: 0.3s ease, color 0.3s ease, transform 0.5s ease; 
+}
+
+button:hover {
+    background: rgb(227, 202, 153);
+    color: black;
+    transform: scaleX(1.1); 
+}
+
+.eqlbtn{
+    color: black;
+    background: orange;
+}
+.eqlbtn:hover{
+    background: greenyellow
+}
+
+.operator{
+    color:aqua ;
+}
